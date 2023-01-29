@@ -3,7 +3,7 @@ import { getEventsJimmyJazz } from '../services/eventService'
 
 const router =express.Router()
 
-router.get('/',getEventsJimmyJazz)
+router.get('/events',getEventsJimmyJazz)
     
   
 

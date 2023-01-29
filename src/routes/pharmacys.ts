@@ -3,7 +3,7 @@ import { getPharmacies } from '../services/pharmacyService'
 
 const router =express.Router()
 
-router.get('/',getPharmacies)
+router.get('/pharmacy',getPharmacies)
     
   
 
