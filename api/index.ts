@@ -1,7 +1,7 @@
 import express from 'express'
 
-import eventRouter from './routes/events'
-import pharmacyRouter from './routes/pharmacys'
+import eventRouter from '../src/routes/events'
+import pharmacyRouter from '../src/routes/pharmacys'
 
 
 const app =express()
@@ -14,7 +14,7 @@ app.get('/ping',(_req,res)=>{
     res.send('pong')
 })
 
-app.use('/',(req,res)=>{res.send('La pagina de incio')})
+app.use('/',(_req,res)=>{res.send('La pagina de incio')})
 app.use('/api/events',eventRouter)
 app.use('/api/pharmacy',pharmacyRouter)
 
