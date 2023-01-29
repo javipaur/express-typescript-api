@@ -7,7 +7,7 @@ import pharmacyRouter from './routes/pharmacys'
 const app =express()
 app.use(express.json())
 
-const PORT =3000
+const PORT = process.env.PORT || 4000;
 
 app.get('/ping',(_req,res)=>{
     console.log('someone pinged here!!!')
