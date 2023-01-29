@@ -1,9 +1,9 @@
 import express from 'express'
-import { getEventsJimmyJazz } from '../services/eventService'
+import { getPharmacies } from '../src/services/pharmacyService'
 
 const router =express.Router()
 
-router.get('/events',getEventsJimmyJazz)
+router.get('/pharmacy',getPharmacies)
     
   
 

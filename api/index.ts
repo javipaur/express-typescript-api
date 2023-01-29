@@ -1,7 +1,7 @@
 import express from 'express'
 
-import eventRouter from '../src/routes/events'
-import pharmacyRouter from '../src/routes/pharmacys'
+import eventRouter from '../routes/events'
+import pharmacyRouter from '../routes/pharmacys'
 
 
 const app =express()
