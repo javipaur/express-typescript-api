@@ -15,8 +15,8 @@ app.get('/ping',(_req,res)=>{
 })
 
 app.use('/',(_req,res)=>{res.send('La pagina de incio')})
-app.use('/events',eventRouter)
-app.use('/pharmacy',pharmacyRouter)
+app.use('/api/events',eventRouter)
+app.use('/api/pharmacy',pharmacyRouter)
 
 app.listen(PORT,()=>{
     console.log(`Server running on port ${PORT}`)
