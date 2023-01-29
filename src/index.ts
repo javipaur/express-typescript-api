@@ -14,6 +14,7 @@ app.get('/ping',(_req,res)=>{
     res.send('pong')
 })
 
+app.use('/',(req,res)=>{res.send('La pagina de incio')})
 app.use('/api/events',eventRouter)
 app.use('/api/pharmacy',pharmacyRouter)
 
